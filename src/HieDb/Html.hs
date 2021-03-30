@@ -1,4 +1,5 @@
 {-# LANGUAGE OverloadedStrings #-}
+-- {-# LANGUAGE PackageImports #-}
 
 module HieDb.Html
     ( Color (..)
@@ -14,6 +15,7 @@ import           Data.List (foldl', sortBy)
 import           Data.Text   (Text)
 import qualified Data.Text as T
 import           Lucid
+-- import "ghc-api-compat"          Module
 import           Module
 
 generate :: FilePath -> ModuleName -> [Text] -> [Span] -> IO ()
