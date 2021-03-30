@@ -71,7 +71,7 @@ library
                      , extra
                      , ansi-terminal
                      , terminal-size
-                     , ghc-api-compat
+                     , ghc-api-compat >= 8.6.1
 
 test-suite hiedb-tests
   import:             common-options
